@@ -6,6 +6,7 @@ authors:
   - jmp
 website: $github
 api-version: 1.13
+folia-supported: true
 softdepend:
   - PlaceholderAPI
   - ViaVersion
