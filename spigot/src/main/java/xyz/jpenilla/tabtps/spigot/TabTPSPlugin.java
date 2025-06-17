@@ -81,9 +81,7 @@ public final class TabTPSPlugin extends PluginBase implements TabTPSPlatform<Pla
     this.getServer().getPluginManager().registerEvents(new JoinQuitListener(this), this);
 
     if (this.tabTPS.configManager().pluginSettings().updateChecker()) {
-      this.getServer().getScheduler().runTaskAsynchronously(this, () ->
-        UpdateChecker.checkVersion(this.getDescription().getVersion()).forEach(this.logger::info)
-      );
+      
     }
     final Metrics metrics = new Metrics(this, 8458);
   }
